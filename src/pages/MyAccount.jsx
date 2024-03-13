@@ -54,30 +54,31 @@ export const MyAccount = () => {
         justifyContent="flex-start"
         alignItems="center"
       >
-        <Grid item xs={2}>
+        <Grid item lg={2} xs={12}>
           <Avatar src={profile} sx={{ width: 150, height: 150 }} />
         </Grid>
         <Grid
           item
-          xs={10}
+          lg={10}
+          xs={12}
           direction="column"
           justifyContent="flex-start"
           alignItems="center"
         >
-          <Grid item xs={12} className="">
+          <Grid item lg={12} className="">
             <Typography className="fs-22 fw-700 ">Divya Chatterjee</Typography>
           </Grid>
-          <Grid item xs={12} className="py-3">
+          <Grid item lg={12} className="py-3">
             <Typography className="fs-12 text-gray">Designation</Typography>
             <Typography className="fs-14">Assistant Manager</Typography>
           </Grid>
 
-          <Grid item xs={12} className="py-3">
+          <Grid item lg={12} className="py-3">
             <Typography className="fs-12 text-gray">Company Name</Typography>
             <Typography className="fs-14">XXY Company Name</Typography>
           </Grid>
         </Grid>
-        <Grid item sx={12}>
+        <Grid item xs={12}>
           <Typography className="fs-12 text-gray">About Me</Typography>
           <Typography className="fs-14">
             Microsoft enables digital transformation for the era of an
@@ -92,7 +93,7 @@ export const MyAccount = () => {
       </Grid>
 
       <Grid container className="d-flex" spacing={2}>
-        <Grid item sm={11.5} lg={5.5} container>
+        <Grid item xs={11.5} lg={5.5} container>
           <Grid
             item
             container
@@ -107,23 +108,23 @@ export const MyAccount = () => {
             <FaRegEdit color="#99CA3B" />
           </Grid>
           <Grid item container className="d-flex">
-            <Grid item xs={6} className="py-3">
+            <Grid item lg={6} xs={12} className="py-3">
               <Typography className="fs-12 text-gray">Designation</Typography>
               <Typography className="fs-14">Assistant Manager</Typography>
             </Grid>
 
-            <Grid item xs={6} className="py-3">
+            <Grid item lg={6} xs={12} className="py-3">
               <Typography className="fs-12 text-gray">Company Name</Typography>
               <Typography className="fs-14">XXY Company Name</Typography>
             </Grid>
-            <Grid item xs={6} className="py-3">
+            <Grid item lg={6} xs={12} className="py-3">
               <Typography className="fs-12 text-gray">
                 Phone/Landline
               </Typography>
               <Typography className="fs-14">7012248653</Typography>
             </Grid>
 
-            <Grid item xs={6} className="py-3">
+            <Grid item lg={6} xs={12} className="py-3">
               <Typography className="fs-14 " sx={{ color: "#2680EB" }}>
                 Change Password
               </Typography>
@@ -154,12 +155,6 @@ export const MyAccount = () => {
 
             <Grid item xs={12} className="py-3">
               <RadioGroup
-                // sx={{
-                //   color: pink[800],
-                //   "&.Mui-checked": {
-                //     color: pink[600],
-                //   },
-                // }}
                 value={notification}
                 onChange={(e) => {
                   setNotification(e.target.value);
