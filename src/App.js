@@ -11,6 +11,7 @@ import AllUsers from "./pages/AllUsers";
 import { MyAccount } from "./pages/MyAccount";
 import Header from "./components/Header/Header.jsx";
 import { useState } from "react";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,6 +33,7 @@ function App() {
           <Route path="/MyAccount" element={<MyAccount />} />
         </Routes>
       </Sidebar>
+      <Footer />
     </BrowserRouter>
   );
 }
