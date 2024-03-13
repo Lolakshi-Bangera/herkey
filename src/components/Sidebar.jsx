@@ -65,7 +65,7 @@ const Sidebar = ({ children, isOpen }) => {
         <div
           style={{
             marginTop: "25px",
-            display: "flex",
+            display: isOpen ? "flex" : "none",
             justifyContent: "center",
           }}
         >
@@ -73,8 +73,12 @@ const Sidebar = ({ children, isOpen }) => {
           <Typography className="fs-24">Hello, </Typography>
         </div>
         <Typography
-          sx={{ width: "30px", cursor: "pointer" }}
-          className="fw-400 fs-24 text-truncate"
+          sx={{
+            width: "200px",
+            cursor: "pointer",
+            display: isOpen ? "flex" : "none",
+          }}
+          className="fw-400 fs-24 text"
         >
           Hewlett Packard Enterprise
         </Typography>

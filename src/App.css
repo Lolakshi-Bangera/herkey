@@ -129,3 +129,10 @@ main {
 .text-gray {
   color: #797a79 !important;
 }
+.text {
+  text-overflow: ellipsis;
+  cursor: pointer;
+  word-break: break-all;
+  overflow: hidden;
+  white-space: nowrap;
+}
