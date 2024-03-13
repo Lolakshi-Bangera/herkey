@@ -1,7 +1,5 @@
 import React from "react";
 import { MdDashboard } from "react-icons/md";
-// import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
-// import { GiHamburgerMenu } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
 import Breadcrumbs from "./Breadcrumbs";
 import Avatar from "@mui/material/Avatar";
@@ -14,7 +12,6 @@ import { ImProfile } from "react-icons/im";
 import { FaBuilding } from "react-icons/fa";
 import { FaPersonCircleCheck } from "react-icons/fa6";
 
-// import Header from './Header';
 const Sidebar = ({ children, isOpen }) => {
   const menuItem = [
     {
