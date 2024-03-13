@@ -13,25 +13,27 @@ main {
   padding: 20px;
 }
 .sidebar {
-  background: #000;
-  color: #fff;
+  background: #404040;
+    color: #B2B2B2;
   height: 96vh;
   width: 300px;
   transition: all 0.5s;
   position: fixed;
+  font-size: small;
 }
 
 .link {
   display: flex;
   color: #fff;
-    padding: 10px 15px;
-    gap: 15px;
+    padding: 15px 25px;
+      gap: 25px;
     transition: all 0.5s;
+    font-size: small;
   }
   
   .link:hover {
-    background: gray;
-    color: greenyellow;
+    background: #313136;
+      color: #99CA3B;
     transition: all 0.5s;
   }
   
@@ -42,7 +44,8 @@ main {
   
   .icon,
   .link_text {
-    font-size: 20px;
+    font-size: small;
+      color: #B2B2B2;
   }
   
   

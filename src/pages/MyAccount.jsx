@@ -25,10 +25,10 @@ export const MyAccount = () => {
           <IoArrowBack color="#99CA3B" />
         </Grid>
         <Grid item>
-          <h5>My Account</h5>
+          <Typography className="fs-16 fw-700">My Account</Typography>
         </Grid>
       </Grid>
-      <Divider variant="fullWidth" />
+      <Divider variant="fullWidth" sx={{ marginY: "15px" }} />
       <Grid
         container
         direction="row"
@@ -37,7 +37,10 @@ export const MyAccount = () => {
         sx={{ backgroundColor: "#F8F8F8" }}
       >
         <Grid item>
-          <Typography className="fw-700 " style={{ paddingLeft: "30px" }}>
+          <Typography
+            className="fs-16 fw-700 "
+            style={{ paddingX: "30px", margin: "15px" }}
+          >
             My Profile
           </Typography>
         </Grid>
@@ -62,21 +65,21 @@ export const MyAccount = () => {
           alignItems="center"
         >
           <Grid item xs={12} className="">
-            <Typography>Divya Chatterjee</Typography>
+            <Typography className="fs-22 fw-700 ">Divya Chatterjee</Typography>
           </Grid>
           <Grid item xs={12} className="py-3">
-            <Typography className="fs-16 text-gray">Designation</Typography>
-            <Typography className="fs-18">Assistant Manager</Typography>
+            <Typography className="fs-12 text-gray">Designation</Typography>
+            <Typography className="fs-14">Assistant Manager</Typography>
           </Grid>
 
           <Grid item xs={12} className="py-3">
-            <Typography className="fs-16 text-gray">Company Name</Typography>
-            <Typography className="fs-18">XXY Company Name</Typography>
+            <Typography className="fs-12 text-gray">Company Name</Typography>
+            <Typography className="fs-14">XXY Company Name</Typography>
           </Grid>
         </Grid>
         <Grid item sx={12}>
-          <Typography className="fs-16 text-gray">About Me</Typography>
-          <Typography className="fs-18">
+          <Typography className="fs-12 text-gray">About Me</Typography>
+          <Typography className="fs-14">
             Microsoft enables digital transformation for the era of an
             intelligent cloud and an intelligent edge. Its mission is to empower
             every person and every organization on the planet to achieve more.
@@ -98,28 +101,30 @@ export const MyAccount = () => {
             alignItems="center"
             sx={{ backgroundColor: "#F8F8F8" }}
           >
-            <Typography>My Account Setting </Typography>
+            <Typography className="fs-16 fw-700 ">
+              My Account Setting{" "}
+            </Typography>
             <FaRegEdit color="#99CA3B" />
           </Grid>
           <Grid item container className="d-flex">
             <Grid item xs={6} className="py-3">
-              <Typography className="fs-16 text-gray">Designation</Typography>
-              <Typography className="fs-18">Assistant Manager</Typography>
+              <Typography className="fs-12 text-gray">Designation</Typography>
+              <Typography className="fs-14">Assistant Manager</Typography>
             </Grid>
 
             <Grid item xs={6} className="py-3">
-              <Typography className="fs-16 text-gray">Company Name</Typography>
-              <Typography className="fs-18">XXY Company Name</Typography>
+              <Typography className="fs-12 text-gray">Company Name</Typography>
+              <Typography className="fs-14">XXY Company Name</Typography>
             </Grid>
             <Grid item xs={6} className="py-3">
-              <Typography className="fs-16 text-gray">
+              <Typography className="fs-12 text-gray">
                 Phone/Landline
               </Typography>
-              <Typography className="fs-18">7012248653</Typography>
+              <Typography className="fs-14">7012248653</Typography>
             </Grid>
 
             <Grid item xs={6} className="py-3">
-              <Typography className="fs-16 " sx={{ color: "#2680EB" }}>
+              <Typography className="fs-14 " sx={{ color: "#2680EB" }}>
                 Change Password
               </Typography>
             </Grid>
@@ -135,12 +140,14 @@ export const MyAccount = () => {
             alignItems="center"
             sx={{ backgroundColor: "#F8F8F8" }}
           >
-            <Typography>Application Setting </Typography>
+            <Typography className="fs-16 fw-700 ">
+              Application Setting{" "}
+            </Typography>
             <FaRegEdit color="#99CA3B" />
           </Grid>
           <Grid item container className="d-flex">
             <Grid item xs={12} className="py-3">
-              <Typography className="fs-16 text-gray">
+              <Typography className="fs-14 text-gray">
                 Receive Job Application via
               </Typography>
             </Grid>

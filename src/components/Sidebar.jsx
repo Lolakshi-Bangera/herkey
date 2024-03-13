@@ -77,6 +77,7 @@ const Sidebar = ({ children, isOpen }) => {
             width: "200px",
             cursor: "pointer",
             display: isOpen ? "flex" : "none",
+            marginBottom: "15px",
           }}
           className="fw-400 fs-24 text"
         >
@@ -98,9 +99,17 @@ const Sidebar = ({ children, isOpen }) => {
             </div>
           </NavLink>
         ))}
-        <p style={{ display: isOpen ? "block" : "none" }}>Contact Us -</p>
-        <p style={{ display: isOpen ? "block" : "none" }}>
-          Email :adsmin@hongfhsdsfg.com
+        <p
+          style={{
+            display: isOpen ? "block" : "none",
+            color: "#99CA3B",
+            marginTop: "68px",
+          }}
+        >
+          Contact Us -
+        </p>
+        <p style={{ display: isOpen ? "block" : "none", color: "#99CA3B" }}>
+          Email :admin@jobsforher.com
         </p>
       </div>
       <div className="content">
